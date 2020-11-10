@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="text-center font-weight-bolder display-3 p-4 text-primary">
+      Join Room
+    </h1>
+
+    <form action="/chat" method="GET" class="col-md-6 mx-auto my-5">
+      <% if(errors.length > 0){ %> <% errors.forEach(error=>{ %>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong class="text-center"><%= error.msg %></strong>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <% }) %> <%}%>
+      <div class="form-group">
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="room" class="lead">Choose Room</label>
+        <select name="room" id="room" class="form-control">
+          <option value="javascript">JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="jquery">JQuery</option>
+          <option value="nodejs">NODE JS</option>
+          <option value="reactjs">React JS</option>
+          <option value="react native">React JS</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input
+          type="submit"
+          class="btn btn-block btn-primary"
+          value="Join Room"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+<!-- #8e44ad -->

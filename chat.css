@@ -1,0 +1,27 @@
+body {
+  overflow: hidden;
+}
+.chat {
+  height: 600px;
+}
+.chat .header {
+  border-radius: 5px 5px 0 0;
+}
+.chat .box {
+  width: 100%;
+  height: 500px;
+}
+.chat .box .users {
+  height: 460px;
+  border-radius: 0 0 0 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chat .box .chatbox {
+  height: 460px;
+  line-height: 1.2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #000;
+}
